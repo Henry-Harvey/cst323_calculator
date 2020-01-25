@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css"
 	href="/cst323_calculator/custom-styles.css">
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-	<a class="navbar-brand" href="showNewCalculationForm.php">Calculator</a>
+	<a class="navbar-brand" href="../views/showNewCalculationForm.php">Calculator</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#navbarSupportedContent"
 		aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -12,13 +12,13 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-				<a class="nav-link" href="showNewCalculationForm.php">Calculate 
+				<a class="nav-link" href="../views/showNewCalculationForm.php">Calculate 
 					<span class="sr-only">(current)</span>
 				</a>
 			</li>
 
 			<li class="nav-item">
-				<a class="nav-link" href="showAllCalculations.php">History</a>
+				<a class="nav-link" href="../views/showAllCalculations.php">History</a>
 			</li>
 		</ul>
 	</div>
