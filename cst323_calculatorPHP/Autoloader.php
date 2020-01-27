@@ -4,14 +4,14 @@ spl_autoload_register(function($class){
     // get the difference in folders between the location of autoloader and the file that called autoloader
     $lastdirectories = substr(getcwd(), strlen(__DIR__));
     
-    echo "getcwd = : " . getcwd() . "<br>";
-    echo "__DIR__ = : . " . __DIR__ . "<br>";
-    echo "last directories = : " . $lastdirectories . "<br>";
+    //echo "getcwd = : " . getcwd() . "<br>";
+    //echo "__DIR__ = : . " . __DIR__ . "<br>";
+    //echo "last directories = : " . $lastdirectories . "<br>";
     
     // count the number of slahes (folder depth)
     $numberOfLastDirectories = substr_count($lastdirectories, '/');
     
-    echo "num last dir: " . $numberOfLastDirectories;
+    //echo "num last dir: " . $numberOfLastDirectories;
     
     // this is the list of possible locations that classes are found in this app
     $directories = ['business', 'business/model', 'database', 'presentation', 'presentation/handlers', 'presentation/views'];
@@ -24,7 +24,7 @@ spl_autoload_register(function($class){
         }
         $classFile = $currentDirectory . '/' . $class . '.php';
         
-        echo "this is my class file: " . $classFile;
+        //echo "this is my class file: " . $classFile;
         
         if(is_readable($classFile)){
             if(require $d . '/' . $class . ".php"){
