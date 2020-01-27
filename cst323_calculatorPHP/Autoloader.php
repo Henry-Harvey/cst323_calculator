@@ -22,6 +22,8 @@ spl_autoload_register(function($class){
         }
         $classFile = $currentDirectory . '/' . $class . '.php';
         
+        echo "this is my class file: " . $classFile;
+        
         if(is_readable($classFile)){
             if(require $d . '/' . $class . ".php"){
                 break;
