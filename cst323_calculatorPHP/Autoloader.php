@@ -9,7 +9,7 @@ spl_autoload_register(function($class){
     echo "last directories = : " . $lastdirectories . "<br>";
     
     // count the number of slahes (folder depth)
-    $numberOfLastDirectories = substr_count($lastdirectories, '\\');
+    $numberOfLastDirectories = substr_count($lastdirectories, '/');
     
     echo "num last dir: " . $numberOfLastDirectories;
     
