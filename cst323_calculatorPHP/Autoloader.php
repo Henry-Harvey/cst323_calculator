@@ -11,6 +11,8 @@ spl_autoload_register(function($class){
     // count the number of slahes (folder depth)
     $numberOfLastDirectories = substr_count($lastdirectories, '\\');
     
+    echo "num last dir: " . $numberOfLastDirectories;
+    
     // this is the list of possible locations that classes are found in this app
     $directories = ['business', 'business/model', 'database', 'presentation', 'presentation/handlers', 'presentation/views'];
     
