@@ -4,9 +4,9 @@ spl_autoload_register(function($class){
     // get the difference in folders between the location of autoloader and the file that called autoloader
     $lastdirectories = substr(getcwd(), strlen(__DIR__));
     
-    /* echo "getcwd = : " . getcwd() . "<br>";
+    echo "getcwd = : " . getcwd() . "<br>";
     echo "__DIR__ = : . " . __DIR__ . "<br>";
-    echo "last directories = : " . $lastdirectories . "<br>"; */
+    echo "last directories = : " . $lastdirectories . "<br>";
     
     // count the number of slahes (folder depth)
     $numberOfLastDirectories = substr_count($lastdirectories, '\\');
